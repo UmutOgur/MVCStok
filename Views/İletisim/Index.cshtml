@@ -1,0 +1,31 @@
+﻿@model MvcStok.Models.Entity.TBLILETISIM
+@{
+    ViewBag.Title = "Urunekle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<form method="post" class="form-group">
+
+    <div>
+        <label>
+          İletişim ADI:
+        </label>
+        <input class="form-control" type="text" name="ILETISIMAD" required="" maxlength="30" />
+    </div>
+    <div>
+        <label>
+            İletişim SOYADI:
+        </label>
+        <input class="form-control" type="text" name="ILETISIMSOYAD" placeholder="Soyisim giriniz..." />
+    </div>
+    
+    <div>
+        <label>
+          İletişim MAİL:
+        </label>
+        <input class="form-control" type="text" name="ILETISIMMAIL" />
+    </div>
+            <div style="margin-top:15px"><button class="btn btn-info">GÖNDER</button></div>
+
+</form>
